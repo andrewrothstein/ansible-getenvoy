@@ -1,5 +1,14 @@
 ---
 - hosts: all
+  vars:
+    getenvoy_install:
+      - flavor: standard
+        version: 1.14.2
+      - flavor: standard
+        version: 1.17.1
+    getenvoy_link:
+      flavor: standard
+      version: 1.14.2
   roles:
   - role: '{{ playbook_dir }}'
   tasks:
@@ -8,3 +17,8 @@
   - name: getenvoy --version
     debug:
       msg: '{{ getenvoy_test_output.stdout }}'
+  - command: /usr/local/bin/envoy --version
+    register: envoy_test_output
+  - name: envoy --version
+    debug:
+      msg: '{{ envoy_test_output.stdout }}'

@@ -5,6 +5,17 @@ getenvoy_mirror: https://github.com/tetratelabs/getenvoy/releases/download
 getenvoy_parent_install_dir: /usr/local
 getenvoy_os: Linux
 getenvoy_arch: x86_64
+
+#getenvoy_install:
+#  - flavor: standard
+#    version: 1.14.2
+#  - flavor: standard
+#    version: 1.17.1
+
+#getenvoy_link:
+#  flavor: standard
+#  version: 1.14.2
+
 getenvoy_checksums:
   # https://github.com/tetratelabs/getenvoy/releases/download/v0.2.1/checksums.txt
   '0.2.1':

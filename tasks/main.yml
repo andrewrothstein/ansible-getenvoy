@@ -53,3 +53,19 @@
     src: '{{ getenvoy_install_exe }}'
     dest: '{{ getenvoy_link_exe }}'
     state: link
+
+- name: installing envoy proxy distributions...
+  when: getenvoy_install is defined
+  become: yes
+  become_user: root
+  with_items: '{{ getenvoy_install }}'
+  command: '{{ getenvoy_link_exe }} fetch {{ item.flavor }}:{{ item.version }}'
+
+- name: linking envoy...
+  when: getenvoy_link is defined
+  become: yes
+  become_user: root
+  file:
+    src: '{{ ansible_env.HOME }}/.getenvoy/builds/{{ getenvoy_link.flavor }}/{{ getenvoy_link.version }}/linux_glibc/bin/envoy'
+    dest: '{{ getenvoy_parent_install_dir }}/bin/envoy'
+    state: link
