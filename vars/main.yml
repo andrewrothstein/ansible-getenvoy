@@ -1,0 +1,11 @@
+---
+# vars file for getenvoy
+getenvoy_platform: '{{ getenvoy_os }}_{{ getenvoy_arch }}'
+getenvoy_name: getenvoy_{{ getenvoy_ver }}_{{ getenvoy_platform }}
+getenvoy_tgz: '{{ getenvoy_name }}.tar.gz'
+getenvoy_tmp_tgz: /tmp/{{ getenvoy_tgz }}
+getenvoy_url: '{{ getenvoy_mirror }}/v{{ getenvoy_ver }}/{{ getenvoy_tgz }}'
+getenvoy_checksum: '{{ getenvoy_checksums[getenvoy_ver][getenvoy_platform] }}'
+getenvoy_install_dir: '{{ getenvoy_parent_install_dir }}/{{ getenvoy_name }}'
+getenvoy_install_exe: '{{ getenvoy_install_dir }}/getenvoy'
+getenvoy_link_exe: '{{ getenvoy_parent_install_dir }}/bin/getenvoy'
