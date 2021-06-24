@@ -20,7 +20,7 @@ dl() {
 
 dl_ver() {
     local ver=$1
-    local url="$MIRROR/v$ver/checksums.txt"
+    local url="$MIRROR/v$ver/${APP}_${ver}_checksums.txt"
     local lchecksums="$DIR/${APP}_${ver}_checksums.txt"
     if [ ! -e $lchecksums ];
     then
@@ -30,9 +30,10 @@ dl_ver() {
     printf "  # %s\n" $url
     printf "  '%s':\n" $ver
 
-    dl $ver $lchecksums Darwin x86_64
-    dl $ver $lchecksums Linux i386
-    dl $ver $lchecksums Linux x86_64
+    dl $ver $lchecksums darwin amd64
+    dl $ver $lchecksums darwin arm64
+    dl $ver $lchecksums linux amd64
+    dl $ver $lchecksums linux arm64
 }
 
-dl_ver ${1:-0.2.0}
+dl_ver ${1:-0.4.1}

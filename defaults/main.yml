@@ -1,6 +1,6 @@
 ---
 # defaults file for getenvoy
-getenvoy_ver: 0.3.1
+getenvoy_ver: 0.4.1
 getenvoy_mirror: https://github.com/tetratelabs/getenvoy/releases/download
 getenvoy_parent_install_dir: /usr/local
 getenvoy_os: linux
@@ -17,16 +17,6 @@ getenvoy_arch: amd64
 #  version: 1.14.2
 
 getenvoy_checksums:
-  # https://github.com/tetratelabs/getenvoy/releases/download/v0.3.1/getenvoy_0.3.1_checksums.txt
-  '0.3.1':
-    # https://github.com/tetratelabs/getenvoy/releases/download/v0.3.1/getenvoy_0.3.1_darwin_amd64.tar.gz
-    darwin_amd64: sha256:769ca6e0a7e2628f5092016aebb70bae8ee69013d3f3027b82787c0041758970
-    # https://github.com/tetratelabs/getenvoy/releases/download/v0.3.1/getenvoy_0.3.1_darwin_arm64.tar.gz
-    darwin_arm64: sha256:3955c290c5093d10a81fa57f78954500d2c80d001992f08e77aa778075a09009
-    # https://github.com/tetratelabs/getenvoy/releases/download/v0.3.1/getenvoy_0.3.1_linux_amd64.tar.gz
-    linux_amd64: sha256:3cc86e5d01e66692d5d7c6a704a91bca7ae4e8bfac5679fcbb843552c95a19e6
-    # https://github.com/tetratelabs/getenvoy/releases/download/v0.3.1/getenvoy_0.3.1_linux_arm64.tar.gz 
-    linux_arm64: sha256:5a8016b311bc6febd0cb8bfc1de9fea3cb5e5e71e844c9f9304e4dd6dba647c0
   # https://github.com/tetratelabs/getenvoy/releases/download/v0.2.0/checksums.txt
   '0.2.0':
     # https://github.com/tetratelabs/getenvoy/releases/download/v0.2.0/getenvoy_0.2.0_Darwin_x86_64.tar.gz
@@ -35,3 +25,23 @@ getenvoy_checksums:
     Linux_i386: sha256:0b09e8b4ff1d4ad93f8fcaa6d30487316962451c4e9afe8c9e2c058f54413743
     # https://github.com/tetratelabs/getenvoy/releases/download/v0.2.0/getenvoy_0.2.0_Linux_x86_64.tar.gz
     Linux_x86_64: sha256:afc8fc25d0619f8d07d3cc45fa606bdeae93ef450f90366d1aba08508699b258
+  # https://github.com/tetratelabs/getenvoy/releases/download/v0.3.1/getenvoy_0.3.1_checksums.txt
+  '0.3.1':
+    # https://github.com/tetratelabs/getenvoy/releases/download/v0.3.1/getenvoy_0.3.1_darwin_amd64.tar.gz
+    darwin_amd64: sha256:769ca6e0a7e2628f5092016aebb70bae8ee69013d3f3027b82787c0041758970
+    # https://github.com/tetratelabs/getenvoy/releases/download/v0.3.1/getenvoy_0.3.1_darwin_arm64.tar.gz
+    darwin_arm64: sha256:3955c290c5093d10a81fa57f78954500d2c80d001992f08e77aa778075a09009
+    # https://github.com/tetratelabs/getenvoy/releases/download/v0.3.1/getenvoy_0.3.1_linux_amd64.tar.gz
+    linux_amd64: sha256:3cc86e5d01e66692d5d7c6a704a91bca7ae4e8bfac5679fcbb843552c95a19e6
+    # https://github.com/tetratelabs/getenvoy/releases/download/v0.3.1/getenvoy_0.3.1_linux_arm64.tar.gz
+    linux_arm64: sha256:5a8016b311bc6febd0cb8bfc1de9fea3cb5e5e71e844c9f9304e4dd6dba647c0
+  # https://github.com/tetratelabs/getenvoy/releases/download/v0.4.1/getenvoy_0.4.1_checksums.txt
+  '0.4.1':
+    # https://github.com/tetratelabs/getenvoy/releases/download/v0.4.1/getenvoy_0.4.1_darwin_amd64.tar.gz
+    darwin_amd64: sha256:f9ad59181474a6fdc5ba1988bd3d3523147a02994f9279aeb57158458db22a09
+    # https://github.com/tetratelabs/getenvoy/releases/download/v0.4.1/getenvoy_0.4.1_darwin_arm64.tar.gz
+    darwin_arm64: sha256:79624969b0129a68907bd1281718d05027bbce008189c34dac2577f266ec5bc0
+    # https://github.com/tetratelabs/getenvoy/releases/download/v0.4.1/getenvoy_0.4.1_linux_amd64.tar.gz
+    linux_amd64: sha256:98480917e80413b5b9886c30668aa80d7685c7972039d0aec864792521730227
+    # https://github.com/tetratelabs/getenvoy/releases/download/v0.4.1/getenvoy_0.4.1_linux_arm64.tar.gz
+    linux_arm64: sha256:21744a928728aec0ad8c5ce4026f3bff56d9bfb84e849f9e8a2460b56c6cb046
