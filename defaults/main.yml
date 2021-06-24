@@ -7,13 +7,10 @@ getenvoy_os: linux
 getenvoy_arch: amd64
 
 #getenvoy_install:
-#  - flavor: standard
-#    version: 1.14.2
-#  - flavor: standard
-#    version: 1.17.1
+#  - version: 1.14.2
+#  - version: 1.17.1
 
 #getenvoy_link:
-#  flavor: standard
 #  version: 1.14.2
 
 getenvoy_checksums:
