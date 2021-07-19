@@ -1,6 +1,6 @@
 andrewrothstein.getenvoy
 =========
-[![Build Status](https://travis-ci.org/andrewrothstein/ansible-getenvoy.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-getenvoy)
+![Build Status](https://github.com/andrewrothstein/ansible-getenvoy/actions/workflows/build.yml/badge.svg)
 
 Installs [GetEnvoy](https://github.com/tetratelabs/getenvoy) by Tetrate Labs
 
